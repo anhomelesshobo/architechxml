@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="IDataService.cs" />
-    <Compile Remove="StudentDataService.cs" />
+    <ProjectReference Include="..\SchoolManagement.Models\SchoolManagement.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SchoolManagement;
 using SchoolManagement.Models;
+using SchoolManagement.Business;
 
 
 namespace SchoolManagement.UI
