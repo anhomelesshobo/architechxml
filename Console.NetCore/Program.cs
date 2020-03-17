@@ -11,8 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Console.NetCore
-{
+
     class Program
     {
         static StudentDataService StudentData;
@@ -32,12 +31,20 @@ namespace Console.NetCore
         static void Main(string[] args)
         {
             StudentData = new StudentDataService();
-            Etudiants = new ObservableCollection<Student>(StudentData.GetAll());
-
             
-            Debug.WriteLine(Etudiants[1].RegistrationNumber.ToString());
-        }
+        Etudiants = new ObservableCollection<Student>(StudentData.GetAll());
+
+            foreach(Student g in Etudiants)
+            {
+                Console.WriteLine("Registration Number: " + g.RegistrationNumber);
+                Console.WriteLine("First Name: " + g.FirstName);
+                Console.WriteLine("Last Name: " + g.LastName);
+                Console.WriteLine("");
+                
+            }
+        Console.ReadLine();
+    }
 
       
     }
-}
+
