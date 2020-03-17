@@ -40,8 +40,9 @@ using System.Threading.Tasks;
                 Console.WriteLine("First Name: " + g.FirstName);
                 Console.WriteLine("Last Name: " + g.LastName);
                 Console.WriteLine("");
-                
-            }
+                Console.WriteLine("");
+
+        }
         Console.ReadLine();
     }
 
